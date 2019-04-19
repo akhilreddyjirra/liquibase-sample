@@ -1,0 +1,17 @@
+create the database & user-with-credentials.
+(1.0)
+mysql > create database denmark;
+-simplicity : I do it with 'root'-user
+
+(2.0) PostgreSQL hints ( exit shell \q )
+$ sudo -u postgres createdb denmark
+$ psql -d denmark -U ingimar
+denmark=>ALTER USER ingimar WITH PASSWORD 'ingimar';
+or 
+$ createuser --interactive denmark
+psql -d postgres
+CREATE USER denmark WITH PASSWORD 'denmark';
+
+postgres=# create database denmark_development;
+postgres=# GRANT ALL PRIVILEGES ON DATABASE denmark_development to ingimar;
+psql -d denmark_development
