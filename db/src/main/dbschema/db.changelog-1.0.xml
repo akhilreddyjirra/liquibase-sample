@@ -42,6 +42,9 @@
             <column name="admin_key" type="varchar(255)" />
             <column name="admin_value" type="varchar(255)"/>
         </createTable>
+          <rollback>
+                <dropTable tableName="ADMIN_CONFIG"/>
+          </rollback> 
     </changeSet>
     <changeSet id="Media - altering - adding RESTFUL_STREAM" author="ingimar">
         <addColumn tableName="MEDIA">
