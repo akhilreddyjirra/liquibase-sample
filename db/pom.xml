@@ -41,17 +41,19 @@
                    <propertyFile>src/main/dbschema/liquibase.properties</propertyFile>
                    <changeLogFile>src/main/dbschema/master.xml</changeLogFile>
                 </configuration>
-                <!-- <executions>
+                <executions>
                     <execution>
-                        <phase>process-resources</phase>
+                    <id>test</id>
+                        <phase>test</phase>                                                                  
+                        <!-- <phase>process-resources</phase> -->
                         <configuration>
-                            <propertyFile>src/main/dbschema/liquibase.properties</propertyFile>
+                            <changeLogFile>src/main/dbschema/db.changelog-rollback.xml</changeLogFile>
                         </configuration>
                         <goals>
                             <goal>update</goal>
                         </goals>
                     </execution>
-                </executions> -->
+                </executions>
             </plugin>
         </plugins>
     </build>

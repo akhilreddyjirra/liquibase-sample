@@ -114,7 +114,16 @@ The following 5 tables should have been created<br>
     - DATABASECHANGELOG
     - DATABASECHANGELOGLOCK
 
+### Creating futureRollbackSQL
 
+1. Luquibase update with 1.0.xml
+   `mvn liquibase:update`
+2. Liquibase futureRollbackSQL at new xml i.e 2.0.xml
+   `mvn liquibase:futureRollbackSQL`
+3. Liquibase update with 2.0.xml ..... add more changelogs if required.
+   `mvn liquibase:update`
+4. Rollback only 2.0 xml 
+   `mvn test`
 
 # Additional stuff
 ### Creating db-documentation
