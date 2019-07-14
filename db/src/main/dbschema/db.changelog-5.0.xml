@@ -6,5 +6,8 @@
          http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd">
     <changeSet id="default-values-for-admin" author="ingimar">
         <sqlFile path="src/main/dbschema/default-insert-for-admin_config.sql"/>
+        <rollback>
+        <sqlFile path="src/main/dbschema/default-insert-for-admin_config.sql" />
+        </rollback>  
     </changeSet>
 </databaseChangeLog>
