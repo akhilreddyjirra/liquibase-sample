@@ -10,7 +10,7 @@
 
 2. `mvn clean install`
 
-3. `mvn resources:resources liquibase:update -Pproduction`
+3. `mvn resources:resources liquibase:update -Pdevelopment`
 
 4. For update SQL files
 
