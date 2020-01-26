@@ -5,9 +5,9 @@
     xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
          http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd">
     
-    <changeSet id="Creating Email" author="rkjirra">
+    <changeSet id="Creating Sheet" author="rkjirra">
        <!-- <tagDatabase tag="1.3"/> -->
-        <createTable tableName="EMAIL">
+        <createTable tableName="SHEET">
             <column name="UUID" type="varchar(255)" autoIncrement="false">
                 <constraints primaryKey="true" nullable="false"/>
             </column>
