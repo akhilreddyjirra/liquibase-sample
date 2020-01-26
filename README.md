@@ -14,6 +14,8 @@ https://mkyong.com/maven/how-to-install-maven-in-windows/
 ### Actuall Senario
 i have database mysql and i am trying to install the mysql tables using liquibase
 
+clone the repo, go the directory `db` and excute the below cmds
+
 1. Build the code
 `mvn clean install`
 
