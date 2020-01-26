@@ -17,12 +17,15 @@ i have database mysql and i am trying to install the mysql tables using liquibas
 clone the repo, go the directory `db` and excute the below cmds
 
 1. Build the code
+
 `mvn clean install`
 
-2. Help 
+2. Help
+
 `mvn liquibase:help`
 
 3. Applies the DatabaseChangeLogs to the database. Useful as part of the build process.
+
 `mvn liquibase:update`
 
 ##### More info
